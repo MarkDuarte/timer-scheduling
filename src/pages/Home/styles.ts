@@ -27,6 +27,8 @@ export const FormContainer = styled.div`
   font-weight: bold;
   flex-wrap: wrap;
 `
+export const TaskInput = styled.input``
+export const MinutesAmountInput = styled.input``
 
 export const CountdownContainer = styled.div`
   font-family: 'Roboto Mono', monospace;
@@ -45,6 +47,7 @@ export const CountdownContainer = styled.div`
 `
 
 export const Separator = styled.div`
+  padding: 1rem;
   color: ${(props) => props.theme['green-500']};
 
   width: 4rem;
@@ -68,4 +71,13 @@ export const StartCountdownButton = styled.button`
   cursor: pointer;
   background: ${(props) => props.theme['green-500']};
   color: ${(props) => props.theme['gray-100']};
+
+  &:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+
+  &:not(:disabled):hover {
+    background: ${(props) => props.theme['green-700']};
+  }
 `
