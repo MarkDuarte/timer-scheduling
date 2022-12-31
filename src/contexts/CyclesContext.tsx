@@ -69,8 +69,6 @@ export function CyclesContextProvider({
     setCycles((state) => [...state, newCycle])
     setActiveCicleId(id)
     setAmountSecondsPassed(0)
-
-    // reset()
   }
 
   function interruptNewCycle() {
