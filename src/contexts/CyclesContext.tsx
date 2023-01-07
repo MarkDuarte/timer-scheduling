@@ -1,6 +1,5 @@
 import { createContext, ReactNode, useReducer, useState } from 'react'
 import {
-  ActionsType,
   addNewCycleAction,
   interruptCurrentCyclesAction,
   markCurrentCyclesAsFinishedAction,
